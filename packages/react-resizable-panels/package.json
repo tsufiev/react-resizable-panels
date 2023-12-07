@@ -1,12 +1,15 @@
 {
-  "name": "react-resizable-panels",
-  "version": "0.0.63",
+  "name": "@timursufiev/react-resizable-panels",
+  "version": "0.0.67",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "React components for resizable panel groups/layouts",
   "author": "Brian Vaughn <brian.david.vaughn@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bvaughn/react-resizable-panels.git"
+    "url": "git+https://github.com/tsufiev/react-resizable-panels.git"
   },
   "source": "src/index.ts",
   "main": "dist/react-resizable-panels.cjs.js",
@@ -64,6 +67,7 @@
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "test": "jest --config=jest.config.js",
     "test:watch": "jest --config=jest.config.js --watch",
+    "prepublishOnly": "cd ../..; npm run prerelease; cd packages/react-resizable-panels",
     "watch": "parcel watch --port=2345"
   },
   "devDependencies": {
