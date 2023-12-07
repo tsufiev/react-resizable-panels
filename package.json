@@ -55,6 +55,7 @@
     "exports": {
       "importConditionDefaultExport": "default"
     },
+    "distFilenameStrategy": "unscoped-package-name",
     "___experimentalFlags_WILL_CHANGE_IN_PATCH": {
       "importsConditions": true
     }
